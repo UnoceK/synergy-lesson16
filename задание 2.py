@@ -32,3 +32,21 @@ class Черепашка:
         steps_y = (distance_y + self.s - 1) // self.s
 
         return steps_x + steps_y
+        
+    
+turtle = Черепашка()
+print(f"x = {turtle.x} y = {turtle.y} s = {turtle.s}")
+turtle.go_up()
+print(f"x = {turtle.x} y = {turtle.y} s = {turtle.s}")
+turtle.go_down()
+print(f"x = {turtle.x} y = {turtle.y} s = {turtle.s}")
+turtle.go_left()
+print(f"x = {turtle.x} y = {turtle.y} s = {turtle.s}")
+turtle.go_right()
+print(f"x = {turtle.x} y = {turtle.y} s = {turtle.s}")
+turtle.evolve()
+print(f"x = {turtle.x} y = {turtle.y} s = {turtle.s}")
+turtle.degrade()
+print(f"x = {turtle.x} y = {turtle.y} s = {turtle.s}")
+moves = turtle.count_moves(int(input("сместиться по х на: ")),int(input("сместиться по y на: ")))
+print(f"moves = {moves}")

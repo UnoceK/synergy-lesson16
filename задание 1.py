@@ -1,4 +1,3 @@
-
 class Касса:
     def __init__(self, initial_amount=0):
         self.money = initial_amount
@@ -20,3 +19,9 @@ class Касса:
             raise ValueError(f"Недостаточно денег в кассе. Доступно: {self.money}, запрашивается: {x}")
         self.money -= x
         print(f"Из кассы изъято {x}. Остаток: {self.money}")
+
+cassa = Касса()
+cassa.top_up(int(input("Введите сумму пополнения: ")))
+cassa.count_1000()
+cassa.take_away(int(input("Введите сумму изъятия: ")))
+cassa.count_1000()
